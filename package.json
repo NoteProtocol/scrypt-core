@@ -1,0 +1,45 @@
+{
+  "name": "scrypt-core",
+  "version": "2.1.42",
+  "description": "Javascript SDK for integration of Bitcoin SV Smart Contracts written in sCrypt language.",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "main": "dist/index.js",
+  "types": "dist",
+  "scripts": {
+    "compile": "tsc -b",
+    "watch": "tsc -b -w",
+    "cov": "nyc npm t",
+    "lint": "eslint src --ext .ts,.js --cache --fix",
+    "testlint": "eslint src --ext .ts,.js",
+    "test": "npm run td",
+    "td": "mocha",
+    "prepare": "npm run compile"
+  },
+  "keywords": [
+    "bsv",
+    "sCrypt",
+    "Javascript",
+    "API"
+  ],
+  "author": "sCrypt.Inc",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.3.17",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^22.4.1",
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@typescript-eslint/parser": "^8.2.0",
+    "chai": "^4.5.0",
+    "eslint": "^8.57.0",
+    "mocha": "^10.7.3",
+    "nyc": "^17.0.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "bsv": "github:sCrypt-Inc/bsv"
+  }
+}

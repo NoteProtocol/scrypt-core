@@ -1,0 +1,32 @@
+
+contract StateSet {
+
+    @state
+    HashedSet<int> set;
+
+    public function insert(SortedItem<int> key, SigHashPreimage preimage) {
+        require(Tx.checkPreimage(preimage));
+        int size = this.set.size();
+        require(!this.set.has(key));
+        require(this.set.add(key));
+        require(this.set.has(key));
+        require(this.set.size() == size + 1);
+        require(this.passSet(preimage));
+    }
+
+    public function delete(int k, int i, SigHashPreimage preimage) {
+        require(Tx.checkPreimage(preimage));
+
+        SortedItem<int> key = {k, i};
+        require(this.set.has(key));
+        require(this.set.delete(key));
+        require(!this.set.has(key));
+        require(this.passSet(preimage));
+    }
+
+    function passSet(SigHashPreimage preimage) : bool {
+        bytes outputScript = this.getStateScript();
+        bytes output = Utils.buildOutput(outputScript, SigHash.value(preimage));
+        return (hash256(output) == SigHash.hashOutputs(preimage));
+    }
+}

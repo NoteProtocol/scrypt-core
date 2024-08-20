@@ -1,0 +1,38 @@
+contract StateMapTest {
+
+    @state
+    HashedMap<int, int> map;
+
+    public function insert(SortedItem<int> key, int val, SigHashPreimage preimage) {
+        require(Tx.checkPreimage(preimage));
+        int size = this.map.size();
+        require(!this.map.has(key));
+        require(this.map.set(key, val));
+        require(this.map.has(key));
+        require(this.map.canGet(key, val));
+        require(this.map.size() == size + 1);
+        require(this.passMap(preimage));
+    }
+
+    public function update(SortedItem<int> key, int val, SigHashPreimage preimage) {
+        require(Tx.checkPreimage(preimage));
+        require(this.map.has(key));
+        require(this.map.set(key, val));
+        require(this.map.canGet(key, val));
+        require(this.passMap(preimage));
+    }
+
+    public function delete(SortedItem<int> key, SigHashPreimage preimage) {
+        require(Tx.checkPreimage(preimage));
+        require(this.map.has(key));
+        require(this.map.delete(key));
+        require(!this.map.has(key));
+        require(this.passMap(preimage));
+    }
+
+    function passMap(SigHashPreimage preimage) : bool {
+        bytes outputScript = this.getStateScript();
+        bytes output = Utils.buildOutput(outputScript, SigHash.value(preimage));
+        return (hash256(output) == SigHash.hashOutputs(preimage));
+    }
+}

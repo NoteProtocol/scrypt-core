@@ -1,0 +1,704 @@
+{
+    "nodeType": "Program",
+    "structs": [],
+    "alias": [],
+    "imports": [],
+    "contracts": [
+        {
+            "nodeType": "Contract",
+            "name": "Foo",
+            "constructor": {
+                "nodeType": "Constructor",
+                "body": {
+                    "nodeType": "FunctionBodyRegular",
+                    "stmts": [
+                        {
+                            "nodeType": "Assignment",
+                            "lhs": {
+                                "nodeType": "BinaryExpr",
+                                "lExpr": {
+                                    "nodeType": "Variable",
+                                    "name": "this",
+                                    "loc": {
+                                        "start": {
+                                            "line": 5,
+                                            "column": 4
+                                        },
+                                        "end": {
+                                            "line": 5,
+                                            "column": 8
+                                        }
+                                    }
+                                },
+                                "name": "Dot",
+                                "rExpr": {
+                                    "nodeType": "Variable",
+                                    "name": "x",
+                                    "loc": {
+                                        "start": {
+                                            "line": 5,
+                                            "column": 9
+                                        },
+                                        "end": {
+                                            "line": 5,
+                                            "column": 10
+                                        }
+                                    }
+                                },
+                                "loc": {
+                                    "start": {
+                                        "line": 5,
+                                        "column": 4
+                                    },
+                                    "end": {
+                                        "line": 5,
+                                        "column": 10
+                                    }
+                                }
+                            },
+                            "rhs": {
+                                "nodeType": "Variable",
+                                "name": "_x",
+                                "loc": {
+                                    "start": {
+                                        "line": 5,
+                                        "column": 13
+                                    },
+                                    "end": {
+                                        "line": 5,
+                                        "column": 15
+                                    }
+                                }
+                            },
+                            "loc": {
+                                "start": {
+                                    "line": 5,
+                                    "column": 4
+                                },
+                                "end": {
+                                    "line": 5,
+                                    "column": 16
+                                }
+                            }
+                        }
+                    ],
+                    "loc": {
+                        "start": {
+                            "line": 4,
+                            "column": 23
+                        },
+                        "end": {
+                            "line": 6,
+                            "column": 4
+                        }
+                    }
+                },
+                "params": [
+                    {
+                        "nodeType": "Parameter",
+                        "name": "_x",
+                        "const": false,
+                        "type": "int",
+                        "loc": {
+                            "start": {
+                                "line": 4,
+                                "column": 15
+                            },
+                            "end": {
+                                "line": 4,
+                                "column": 21
+                            }
+                        }
+                    }
+                ],
+                "loc": {
+                    "start": {
+                        "line": 4,
+                        "column": 3
+                    },
+                    "end": {
+                        "line": 6,
+                        "column": 4
+                    }
+                }
+            },
+            "statics": [],
+            "functions": [
+                {
+                    "nodeType": "FunctionDefinition",
+                    "body": {
+                        "nodeType": "FunctionBodyRegular",
+                        "return": null,
+                        "stmts": [
+                            {
+                                "nodeType": "Requirement",
+                                "expr": {
+                                    "nodeType": "BinaryExpr",
+                                    "lExpr": {
+                                        "nodeType": "Variable",
+                                        "name": "y",
+                                        "loc": {
+                                            "start": {
+                                                "line": 9,
+                                                "column": 11
+                                            },
+                                            "end": {
+                                                "line": 9,
+                                                "column": 12
+                                            }
+                                        }
+                                    },
+                                    "name": "Equal",
+                                    "rExpr": {
+                                        "nodeType": "BinaryExpr",
+                                        "lExpr": {
+                                            "nodeType": "Variable",
+                                            "name": "this",
+                                            "loc": {
+                                                "start": {
+                                                    "line": 9,
+                                                    "column": 16
+                                                },
+                                                "end": {
+                                                    "line": 9,
+                                                    "column": 20
+                                                }
+                                            }
+                                        },
+                                        "name": "Dot",
+                                        "rExpr": {
+                                            "nodeType": "Variable",
+                                            "name": "x",
+                                            "loc": {
+                                                "start": {
+                                                    "line": 9,
+                                                    "column": 21
+                                                },
+                                                "end": {
+                                                    "line": 9,
+                                                    "column": 22
+                                                }
+                                            }
+                                        },
+                                        "loc": {
+                                            "start": {
+                                                "line": 9,
+                                                "column": 16
+                                            },
+                                            "end": {
+                                                "line": 9,
+                                                "column": 22
+                                            }
+                                        }
+                                    },
+                                    "loc": {
+                                        "start": {
+                                            "line": 9,
+                                            "column": 11
+                                        },
+                                        "end": {
+                                            "line": 9,
+                                            "column": 22
+                                        }
+                                    }
+                                },
+                                "loc": {
+                                    "start": {
+                                        "line": 9,
+                                        "column": 3
+                                    },
+                                    "end": {
+                                        "line": 9,
+                                        "column": 24
+                                    }
+                                }
+                            }
+                        ],
+                        "loc": {
+                            "start": {
+                                "line": 8,
+                                "column": 32
+                            },
+                            "end": {
+                                "line": 10,
+                                "column": 4
+                            }
+                        }
+                    },
+                    "static": false,
+                    "visibility": "Public",
+                    "params": [
+                        {
+                            "nodeType": "Parameter",
+                            "name": "y",
+                            "const": false,
+                            "type": "int",
+                            "loc": {
+                                "start": {
+                                    "line": 8,
+                                    "column": 25
+                                },
+                                "end": {
+                                    "line": 8,
+                                    "column": 30
+                                }
+                            }
+                        }
+                    ],
+                    "name": "equal",
+                    "returnType": null,
+                    "loc": {
+                        "start": {
+                            "line": 8,
+                            "column": 10
+                        },
+                        "end": {
+                            "line": 10,
+                            "column": 4
+                        }
+                    }
+                },
+                {
+                    "nodeType": "FunctionDefinition",
+                    "body": {
+                        "nodeType": "FunctionBodyRegular",
+                        "return": null,
+                        "stmts": [
+                            {
+                                "nodeType": "Assignment",
+                                "lhs": {
+                                    "nodeType": "BinaryExpr",
+                                    "lExpr": {
+                                        "nodeType": "Variable",
+                                        "name": "this",
+                                        "loc": {
+                                            "start": {
+                                                "line": 13,
+                                                "column": 3
+                                            },
+                                            "end": {
+                                                "line": 13,
+                                                "column": 7
+                                            }
+                                        }
+                                    },
+                                    "name": "Dot",
+                                    "rExpr": {
+                                        "nodeType": "Variable",
+                                        "name": "x",
+                                        "loc": {
+                                            "start": {
+                                                "line": 13,
+                                                "column": 8
+                                            },
+                                            "end": {
+                                                "line": 13,
+                                                "column": 9
+                                            }
+                                        }
+                                    },
+                                    "loc": {
+                                        "start": {
+                                            "line": 13,
+                                            "column": 3
+                                        },
+                                        "end": {
+                                            "line": 13,
+                                            "column": 9
+                                        }
+                                    }
+                                },
+                                "rhs": {
+                                    "nodeType": "FunctionCall",
+                                    "params": [
+                                        {
+                                            "nodeType": "BinaryExpr",
+                                            "lExpr": {
+                                                "nodeType": "Variable",
+                                                "name": "this",
+                                                "loc": {
+                                                    "start": {
+                                                        "line": 13,
+                                                        "column": 21
+                                                    },
+                                                    "end": {
+                                                        "line": 13,
+                                                        "column": 25
+                                                    }
+                                                }
+                                            },
+                                            "name": "Dot",
+                                            "rExpr": {
+                                                "nodeType": "Variable",
+                                                "name": "x",
+                                                "loc": {
+                                                    "start": {
+                                                        "line": 13,
+                                                        "column": 26
+                                                    },
+                                                    "end": {
+                                                        "line": 13,
+                                                        "column": 27
+                                                    }
+                                                }
+                                            },
+                                            "loc": {
+                                                "start": {
+                                                    "line": 13,
+                                                    "column": 21
+                                                },
+                                                "end": {
+                                                    "line": 13,
+                                                    "column": 27
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "nodeType": "IntLiteral",
+                                            "hex": false,
+                                            "value": "1",
+                                            "loc": {
+                                                "start": {
+                                                    "line": 13,
+                                                    "column": 29
+                                                },
+                                                "end": {
+                                                    "line": 13,
+                                                    "column": 30
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "name": "this.sum",
+                                    "loc": {
+                                        "start": {
+                                            "line": 13,
+                                            "column": 12
+                                        },
+                                        "end": {
+                                            "line": 13,
+                                            "column": 31
+                                        }
+                                    }
+                                },
+                                "loc": {
+                                    "start": {
+                                        "line": 13,
+                                        "column": 3
+                                    },
+                                    "end": {
+                                        "line": 13,
+                                        "column": 32
+                                    }
+                                }
+                            },
+                            {
+                                "nodeType": "Requirement",
+                                "expr": {
+                                    "nodeType": "BinaryExpr",
+                                    "lExpr": {
+                                        "nodeType": "BinaryExpr",
+                                        "lExpr": {
+                                            "nodeType": "Variable",
+                                            "name": "this",
+                                            "loc": {
+                                                "start": {
+                                                    "line": 14,
+                                                    "column": 11
+                                                },
+                                                "end": {
+                                                    "line": 14,
+                                                    "column": 15
+                                                }
+                                            }
+                                        },
+                                        "name": "Dot",
+                                        "rExpr": {
+                                            "nodeType": "Variable",
+                                            "name": "x",
+                                            "loc": {
+                                                "start": {
+                                                    "line": 14,
+                                                    "column": 16
+                                                },
+                                                "end": {
+                                                    "line": 14,
+                                                    "column": 17
+                                                }
+                                            }
+                                        },
+                                        "loc": {
+                                            "start": {
+                                                "line": 14,
+                                                "column": 11
+                                            },
+                                            "end": {
+                                                "line": 14,
+                                                "column": 17
+                                            }
+                                        }
+                                    },
+                                    "name": "Equal",
+                                    "rExpr": {
+                                        "nodeType": "Variable",
+                                        "name": "y",
+                                        "loc": {
+                                            "start": {
+                                                "line": 14,
+                                                "column": 21
+                                            },
+                                            "end": {
+                                                "line": 14,
+                                                "column": 22
+                                            }
+                                        }
+                                    },
+                                    "loc": {
+                                        "start": {
+                                            "line": 14,
+                                            "column": 11
+                                        },
+                                        "end": {
+                                            "line": 14,
+                                            "column": 22
+                                        }
+                                    }
+                                },
+                                "loc": {
+                                    "start": {
+                                        "line": 14,
+                                        "column": 3
+                                    },
+                                    "end": {
+                                        "line": 14,
+                                        "column": 24
+                                    }
+                                }
+                            }
+                        ],
+                        "loc": {
+                            "start": {
+                                "line": 12,
+                                "column": 39
+                            },
+                            "end": {
+                                "line": 15,
+                                "column": 3
+                            }
+                        }
+                    },
+                    "static": false,
+                    "visibility": "Public",
+                    "params": [
+                        {
+                            "nodeType": "Parameter",
+                            "name": "y",
+                            "const": false,
+                            "type": "int",
+                            "loc": {
+                                "start": {
+                                    "line": 12,
+                                    "column": 32
+                                },
+                                "end": {
+                                    "line": 12,
+                                    "column": 37
+                                }
+                            }
+                        }
+                    ],
+                    "name": "equalAfterInc",
+                    "returnType": null,
+                    "loc": {
+                        "start": {
+                            "line": 12,
+                            "column": 9
+                        },
+                        "end": {
+                            "line": 15,
+                            "column": 3
+                        }
+                    }
+                },
+                {
+                    "nodeType": "FunctionDefinition",
+                    "body": {
+                        "nodeType": "FunctionBodyRegular",
+                        "return": {
+                            "nodeType": "Variable",
+                            "name": "z",
+                            "loc": {
+                                "start": {
+                                    "line": 19,
+                                    "column": 10
+                                },
+                                "end": {
+                                    "line": 19,
+                                    "column": 11
+                                }
+                            }
+                        },
+                        "stmts": [
+                            {
+                                "nodeType": "VariableDeclaration",
+                                "expr": {
+                                    "nodeType": "BinaryExpr",
+                                    "lExpr": {
+                                        "nodeType": "Variable",
+                                        "name": "x",
+                                        "loc": {
+                                            "start": {
+                                                "line": 18,
+                                                "column": 11
+                                            },
+                                            "end": {
+                                                "line": 18,
+                                                "column": 12
+                                            }
+                                        }
+                                    },
+                                    "name": "Add",
+                                    "rExpr": {
+                                        "nodeType": "Variable",
+                                        "name": "y",
+                                        "loc": {
+                                            "start": {
+                                                "line": 18,
+                                                "column": 15
+                                            },
+                                            "end": {
+                                                "line": 18,
+                                                "column": 16
+                                            }
+                                        }
+                                    },
+                                    "loc": {
+                                        "start": {
+                                            "line": 18,
+                                            "column": 11
+                                        },
+                                        "end": {
+                                            "line": 18,
+                                            "column": 16
+                                        }
+                                    }
+                                },
+                                "name": "z",
+                                "const": false,
+                                "type": "int",
+                                "loc": {
+                                    "start": {
+                                        "line": 18,
+                                        "column": 3
+                                    },
+                                    "end": {
+                                        "line": 18,
+                                        "column": 17
+                                    }
+                                }
+                            }
+                        ],
+                        "loc": {
+                            "start": {
+                                "line": 17,
+                                "column": 34
+                            },
+                            "end": {
+                                "line": 20,
+                                "column": 3
+                            }
+                        }
+                    },
+                    "static": false,
+                    "visibility": "Default",
+                    "params": [
+                        {
+                            "nodeType": "Parameter",
+                            "name": "x",
+                            "const": false,
+                            "type": "int",
+                            "loc": {
+                                "start": {
+                                    "line": 17,
+                                    "column": 15
+                                },
+                                "end": {
+                                    "line": 17,
+                                    "column": 20
+                                }
+                            }
+                        },
+                        {
+                            "nodeType": "Parameter",
+                            "name": "y",
+                            "const": false,
+                            "type": "int",
+                            "loc": {
+                                "start": {
+                                    "line": 17,
+                                    "column": 22
+                                },
+                                "end": {
+                                    "line": 17,
+                                    "column": 27
+                                }
+                            }
+                        }
+                    ],
+                    "name": "sum",
+                    "returnType": "int",
+                    "loc": {
+                        "start": {
+                            "line": 17,
+                            "column": 2
+                        },
+                        "end": {
+                            "line": 20,
+                            "column": 3
+                        }
+                    }
+                }
+            ],
+            "properties": [
+                {
+                    "nodeType": "Property",
+                    "state": false,
+                    "visibility": "Default",
+                    "name": "x",
+                    "const": false,
+                    "type": "int",
+                    "loc": {
+                        "start": {
+                            "line": 2,
+                            "column": 3
+                        },
+                        "end": {
+                            "line": 2,
+                            "column": 8
+                        }
+                    }
+                }
+            ],
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 10
+                },
+                "end": {
+                    "line": 21,
+                    "column": 2
+                }
+            }
+        }
+    ],
+    "loc": {
+        "start": {
+            "line": 1,
+            "column": 1
+        },
+        "end": {
+            "line": 21,
+            "column": 2
+        }
+    }
+}
