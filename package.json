@@ -41,5 +41,10 @@
   },
   "dependencies": {
     "@scrypt-inc/bsv": "^1.0.1"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@scrypt-inc/bsv": "patches/@scrypt-inc__bsv.patch"
+    }
   }
 }
