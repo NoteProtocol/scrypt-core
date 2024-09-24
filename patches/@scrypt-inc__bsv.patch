@@ -1,0 +1,11 @@
+diff --git a/dist/module.js b/dist/module.js
+index 8a6e57a66da3c3ed61bac0b769db5d64bbae6209..98a88504555ba9bca772f09915c9daef3a7d70a6 100644
+--- a/dist/module.js
++++ b/dist/module.js
+@@ -27065,5 +27065,5 @@ $747425b437e121da$exports = $747425b437e121da$var$bsv;
+ var $747425b437e121da$export$2e2bcd8739ae039 = $747425b437e121da$var$bsv;
+ 
+ 
+-export {$747425b437e121da$exports as default, $747425b437e121da$export$2e2bcd8739ae039 as default};
++export {$747425b437e121da$exports as default};
+ //# sourceMappingURL=module.js.map
