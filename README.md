@@ -4,10 +4,10 @@ Javascript/TypeScript SDK for integration of Bitcoin SV Smart Contracts written 
 
 [![Build Status](https://travis-ci.com/sCrypt-Inc/scryptlib.svg?branch=master)](https://travis-ci.com/sCrypt-Inc/scryptlib)
 
-You can install `scryptlib` in your project as below:
+You can install `scrypt-core` in your project as below:
 
 ```
-$ npm install scryptlib
+$ npm install scrypt-core
 ```
 
 A smart contract is compiled to a locking script template. A contract function call is transformed to an unlocking script. Developers are responsible for setting the locking and unlocking scripts of a transaction properly before sending it to the Bitcoin network. This may include some actions described below:
