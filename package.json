@@ -40,6 +40,6 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@scrypt-inc/bsv": "^1.0.1"
+    "@scrypt-inc/bsv": "github:NoteProtocol/bsv"
   }
 }
