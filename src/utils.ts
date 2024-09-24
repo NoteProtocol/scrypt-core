@@ -1,4 +1,4 @@
-import * as bsv from 'bsv';
+import * as bsv from '@scrypt-inc/bsv';
 import * as crypto from 'crypto';
 
 export { bsv };
